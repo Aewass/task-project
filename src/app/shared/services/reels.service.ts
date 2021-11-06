@@ -8,7 +8,7 @@ import { map } from 'rxjs/internal/operators/map';
   providedIn: 'root',
 })
 export class ReelsService {
-  movies = 'assets/newMovies.json';
+  movies = 'assets/movies.json';
   shows = 'assets/shows.json';
   constructor(private httpClient: HttpClient) {}
 
@@ -21,7 +21,11 @@ export class ReelsService {
   }
 
   public getShows(): Observable<IReel[]> {
-    return this.httpClient.get<IReel[]>(this.shows);
+    return this.httpClient.get<IReel[]>(this.shows).pipe(
+      map((result) => {
+        return this.normalize(result);
+      })
+    );
   }
 
   public normalize(data: IReel[]) {
