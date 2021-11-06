@@ -1,0 +1,170 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "release": "14 Oct 1994",
+    "cast": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg",
+    "rating": "9.3"
+  },
+  {
+    "title": "Fight Club",
+    "release": "15 Oct 1999",
+    "cast": "Brad Pitt, Edward Norton, Helena Bonham Carter, Meat Loaf",
+    "description": "An insomniac office worker looking for a way to change his life crosses paths with a devil-may-care soap maker and they form an underground fight club that evolves into something much, much more...",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMjIwNTYzMzE1M15BMl5BanBnXkFtZTcwOTE5Mzg3OA@@._V1_SX300.jpg",
+    "rating": "8.8"
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "release": "19 Dec 2001",
+    "cast": "Elijah Wood, Ian McKellen, Orlando Bloom, Sean Bean",
+    "description": "A meek hobbit of The Shire and eight companions set out on a journey to Mount Doom to destroy the One Ring and the dark lord Sauron.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BNTEyMjAwMDU1OV5BMl5BanBnXkFtZTcwNDQyNTkxMw@@._V1_SX300.jpg",
+    "rating": "8.8"
+  },
+  {
+    "title": "One Flew Over the Cuckoo's Nest",
+    "release": "21 Nov 1975",
+    "cast": "Jack Nicholson, Louise Fletcher, Michael Berryman, Peter Brocco",
+    "description": "Upon admittance to a mental institution, a brash rebel rallies the patients to take on the oppressive head nurse.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTk5OTA4NTc0NF5BMl5BanBnXkFtZTcwNzI5Mzg3OA@@._V1_SX300.jpg",
+    "rating": "8.8"
+  },
+  {
+    "title": "Inception",
+    "release": "16 Jul 2010",
+    "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Ken Watanabe",
+    "description": "A skilled extractor is offered a chance to regain his old life as payment for a task considered to be impossible.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+    "rating": "8.8"
+  },
+  {
+    "title": "Goodfellas",
+    "release": "19 Sep 1990",
+    "cast": "Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco",
+    "description": "Henry Hill and his friends work their way up through the mob hierarchy.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMjU3MTQ4OTA0MV5BMl5BanBnXkFtZTYwNjAyMDg4._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "Star Wars",
+    "release": "25 May 1977",
+    "cast": "Mark Hamill, Harrison Ford, Carrie Fisher, Alec Guinness",
+    "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the universe from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTU4NTczODkwM15BMl5BanBnXkFtZTcwMzEyMTIyMw@@._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "Seven Samurai",
+    "release": "19 Nov 1956",
+    "cast": "Toshir\u00f4 Mifune, Takashi Shimura, Keiko Tsushima, Yukiko Shimazaki",
+    "description": "A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BNzg5Mzk5Nzc0NF5BMl5BanBnXkFtZTcwNjg3MDQzMQ@@._V1_SX300.jpg",
+    "rating": "8.8"
+  },
+  {
+    "title": "Forrest Gump",
+    "release": "06 Jul 1994",
+    "cast": "Tom Hanks, Robin Wright, Gary Sinise, Sally Field",
+    "description": "Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTQwMTA5MzI1MF5BMl5BanBnXkFtZTcwMzY5Mzg3OA@@._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "The Matrix",
+    "release": "31 Mar 1999",
+    "cast": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving",
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMjEzNjg1NTg2NV5BMl5BanBnXkFtZTYwNjY3MzQ5._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "The Godfather",
+    "release": "24 Mar 1972",
+    "cast": "Marlon Brando, Al Pacino, James Caan, Diane Keaton",
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMjEyMjcyNDI4MF5BMl5BanBnXkFtZTcwMDA5Mzg3OA@@._V1_SX300.jpg",
+    "rating": "9.2"
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "release": "18 Dec 2002",
+    "cast": "Elijah Wood, Ian McKellen, Viggo Mortensen, Orlando Bloom",
+    "description": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTAyNDU0NjY4NTheQTJeQWpwZ15BbWU2MDk4MTY2Nw@@._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "City of God",
+    "release": "N/A",
+    "cast": "Alexandre Rodrigues, Matheus Nachtergaele, Leandro Firmino, Phellipe Haagensen",
+    "description": "Two boys growing up in a violent neighborhood of Rio de Janeiro take different paths: one becomes a photographer, the other a drug dealer.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMjA4ODQ3ODkzNV5BMl5BanBnXkFtZTYwOTc4NDI3._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "City of God",
+    "release": "N/A",
+    "cast": "Alexandre Rodrigues, Matheus Nachtergaele, Leandro Firmino, Phellipe Haagensen",
+    "description": "Two boys growing up in a violent neighborhood of Rio de Janeiro take different paths: one becomes a photographer, the other a drug dealer.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMjA4ODQ3ODkzNV5BMl5BanBnXkFtZTYwOTc4NDI3._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "Se7en",
+    "release": "22 Sep 1995",
+    "cast": "Morgan Freeman, Brad Pitt, Kevin Spacey, Andrew Kevin Walker",
+    "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his modus operandi.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTQwNTU3MTE4NF5BMl5BanBnXkFtZTcwOTgxNDM2Mg@@._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "release": "14 Feb 1991",
+    "cast": "Jodie Foster, Anthony Hopkins, Lawrence A. Bonney, Kasi Lemmons",
+    "description": "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer who skins his victims.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTQ2NzkzMDI4OF5BMl5BanBnXkFtZTcwMDA0NzE1NA@@._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "Once Upon a Time in the West",
+    "release": "21 Dec 1968",
+    "cast": "Henry Fonda, Charles Bronson, Claudia Cardinale, Jason Robards",
+    "description": "Epic story of a mysterious stranger with a harmonica who joins forces with a notorious desperado to protect a beautiful widow from a ruthless assassin working for the railroad.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTgwMzU1MDEyMl5BMl5BanBnXkFtZTcwNDc5Mzg3OA@@._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "Casablanca",
+    "release": "23 Jan 1943",
+    "cast": "Humphrey Bogart, Ingrid Bergman, Paul Henreid, Claude Rains",
+    "description": "Set in unoccupied Africa during the early days of World War II: An American expatriate meets a former lover, with unforeseen complications.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTcwNDI5MjI1Ml5BMl5BanBnXkFtZTYwODE4NDI2._V1_SX300.jpg",
+    "rating": "8.7"
+  },
+  {
+    "title": "Indiana Jones and the Last Crusade",
+    "release": "24 May 1989",
+    "cast": "Harrison Ford, Sean Connery, Alison Doody, Denholm Elliott",
+    "description": "When Dr. Henry Jones Sr. suddenly goes missing while pursuing the Holy Grail, eminent archaeologist Indiana Jones must follow in his father's footsteps and stop the Nazis.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTQxMTUyODg2OF5BMl5BanBnXkFtZTcwNDM2MjAxNA@@._V1_SX300.jpg",
+    "rating": "8.3"
+  },
+  {
+    "title": "The Pianist",
+    "release": "28 Mar 2003",
+    "cast": "Adrien Brody, Thomas Kretschmann, Frank Finlay, Emilia Fox",
+    "description": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTc4OTkyOTA3OF5BMl5BanBnXkFtZTYwMDIxNjk5._V1_SX300.jpg",
+    "rating": "8.5"
+  },
+  {
+    "title": "The Intouchables",
+    "release": "02 Nov 2011",
+    "cast": "Fran\u00e7ois Cluzet, Omar Sy, Anne Le Ny, Audrey Fleurot",
+    "description": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caretaker.",
+    "cover": "http://ia.media-imdb.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SX300.jpg",
+    "rating": "8.5"
+  }
+]
