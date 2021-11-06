@@ -4,6 +4,21 @@
   src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("./assets/fonts/MontSerrat/Montserrat-Medium.ttf");
+}
+
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+:root {
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+  --color-primary: #333;
+  --color-secondary: darkgray;
+  --font-large: 18px;
+  --font-small: 14px;
 }

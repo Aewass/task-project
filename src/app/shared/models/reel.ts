@@ -4,7 +4,9 @@ export interface IReel {
   cast: string[];
   rating: number;
   cover: string;
+  genres?: string[];
   description: string;
-  userRating?: string;
   rated?: boolean;
+  totalRating: number;
+  userRating: number;
 }
