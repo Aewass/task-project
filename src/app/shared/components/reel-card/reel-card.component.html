@@ -13,6 +13,7 @@
   <div class="card-body">
     <h4 class="card-title">{{reel.title}}</h4>
     <div class="card__cast"><b>Starring:</b> {{reel.cast}}</div>
+    <div class="card__release mt-2"><b>Released:</b> {{reel.release | date: 'YYYY'}}</div>
   </div>
   <div class="card-footer">
     <p class="card-text" placement="top" [ngbTooltip]="reel.description">{{reel.description}}</p>

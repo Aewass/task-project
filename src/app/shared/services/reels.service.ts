@@ -24,6 +24,14 @@ export class ReelsService {
 
   public normalize(data: Reel[]) {
     data.sort((a, b) => b.totalRating - a.totalRating);
+    data.forEach((reel) => {
+      reel.release = this.toDate(reel.release);
+    });
+    console.log(data);
     return data;
+  }
+
+  public toDate(date: any) {
+    return new Date(date);
   }
 }

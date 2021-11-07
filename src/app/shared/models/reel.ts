@@ -1,6 +1,6 @@
 export interface Reel {
   title: string;
-  released: Date;
+  release: Date;
   cast: string[];
   cover: string;
   genres?: string[];

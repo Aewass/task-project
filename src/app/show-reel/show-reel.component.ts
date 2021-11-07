@@ -35,6 +35,12 @@ export class ShowReelComponent implements OnInit, OnDestroy {
     clearTimeout(this.timer);
   }
 
+  public reset() {
+    this.reels = [];
+    this.filteredReels = [];
+    this.searchInput = '';
+  }
+
   public fetchMoreReels(page: Page) {
     this.initialLoad = false;
     this.isLoading = true;
@@ -42,14 +48,20 @@ export class ShowReelComponent implements OnInit, OnDestroy {
       this.page = {
         start: page.start,
         end: page.end + 10,
-        hasNext: page.end + 10 >= this.reels.length ? false : true,
+        hasNext:
+          page.end + 10 >=
+          (this.searchInput.length < 2
+            ? this.reels.length
+            : this.filteredReels.length)
+            ? false
+            : true,
       };
       this.isLoading = false;
     }, 1000);
   }
 
   public fetchReels(showMovies: boolean) {
-    this.reels = [];
+    this.reset();
     this.initialLoad = true;
     this.isLoading = true;
     this.reelsService.getReels(showMovies).subscribe((res) => {
@@ -70,6 +82,14 @@ export class ShowReelComponent implements OnInit, OnDestroy {
 
   public searchReels(search: string) {
     this.searchInput = search;
-    this.filteredReels = this.searchPipe.transform(this.reels, search);
+    if (this.searchInput.length >= 2) {
+      this.filteredReels = this.searchPipe.transform(this.reels, search);
+    } else {
+      this.page = {
+        start: 0,
+        end: 10,
+        hasNext: this.reels.length < 10 ? false : true,
+      };
+    }
   }
 }
