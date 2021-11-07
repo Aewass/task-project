@@ -1,20 +1,20 @@
 <div class="card p-1 d-flex h-100">
   <div class="position-relative">
-    <img [src]="movie.cover" class="card-img-top" alt="Missing Image">
-    <div class="position-absolute top-0 mt-2">
-      <span class="badge bg-dark m-1" *ngFor="let genre of movie.genres">
+    <img [src]="reel.cover" class="card-img-top" alt="Missing Image">
+    <div class="position-absolute top-0 mt-2" *ngIf="reel.genres">
+      <span class="badge bg-dark m-1" *ngFor="let genre of reel.genres">
         {{genre}}
       </span>
     </div>
     <div class="position-absolute bottom-0 w-100 d-block">
-      <app-reel-rating [rating]="movie.totalRating" [readOnly]="true"></app-reel-rating>
+      <app-reel-rating [rating]="reel.totalRating" [readOnly]="true"></app-reel-rating>
     </div>
   </div>
   <div class="card-body">
-    <h4 class="card-title">{{movie.title}}</h4>
-    <div class="card__cast"><b>Starring:</b> {{movie.cast}}</div>
+    <h4 class="card-title">{{reel.title}}</h4>
+    <div class="card__cast"><b>Starring:</b> {{reel.cast}}</div>
   </div>
   <div class="card-footer">
-    <p class="card-text" placement="top" [ngbTooltip]="movie.description">{{movie.description}}</p>
+    <p class="card-text" placement="top" [ngbTooltip]="reel.description">{{reel.description}}</p>
   </div>
 </div>

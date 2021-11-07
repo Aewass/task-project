@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Reel } from '../../models/reel';
 
 @Component({
@@ -6,11 +6,6 @@ import { Reel } from '../../models/reel';
   templateUrl: './reel-list.component.html',
   styleUrls: ['./reel-list.component.scss'],
 })
-export class ReelListComponent implements OnInit {
+export class ReelListComponent {
   @Input() reels: Reel[] = [];
-  constructor() {}
-
-  ngOnInit(): void {
-    console.log(this.reels);
-  }
 }

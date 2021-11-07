@@ -11,8 +11,8 @@
     </div>
     <div class="row justify-content-center" *ngIf="reels.length">
       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3"
-        *ngFor="let reel of reels | slice:page.start: page.end;">
-        <app-reel-card [movie]="reel"></app-reel-card>
+        *ngFor="let reel of (searchInput.length < 2 ? reels : filteredReels) | slice:page.start: page.end">
+        <app-reel-card [reel]="reel"></app-reel-card>
       </div>
       <div class="col-12 text-center" *ngIf="page.hasNext">
         <button class="reel__more btn btn-dark my-5" (click)="fetchMoreReels(page)" *ngIf="!isLoading">

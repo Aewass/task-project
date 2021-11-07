@@ -15,6 +15,7 @@ import { ReelSearchComponent } from './shared/components/reel-search/reel-search
 import { ReelLoaderComponent } from './shared/components/reel-loader/reel-loader.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReelListComponent } from './shared/components/reel-list/reel-list.component';
+import { SearchPipe } from './shared/pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ReelListComponent } from './shared/components/reel-list/reel-list.compo
     ReelSwitchComponent,
     ReelLoaderComponent,
     ReelListComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,7 @@ import { ReelListComponent } from './shared/components/reel-list/reel-list.compo
     NgbModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [SearchPipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

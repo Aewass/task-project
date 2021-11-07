@@ -1,8 +1,7 @@
-import { Observable } from 'rxjs';
-import { FunctionService } from './../shared/services/function.service';
+import { SearchPipe } from './../shared/pipes/search.pipe';
 import { Reel } from './../shared/models/reel';
 import { ReelsService } from './../shared/services/reels.service';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, Pipe } from '@angular/core';
 
 export interface Page {
   start: number;
@@ -18,10 +17,15 @@ export class ShowReelComponent implements OnInit, OnDestroy {
   public showMovies = true;
   public isLoading = true;
   public initialLoad = true;
+  public searchInput = '';
   public reels: Reel[] = [];
+  public filteredReels: Reel[] = [];
   page!: Page;
   timer: any;
-  constructor(private reelsService: ReelsService) {}
+  constructor(
+    private reelsService: ReelsService,
+    private searchPipe: SearchPipe
+  ) {}
 
   ngOnInit(): void {
     this.fetchReels(true);
@@ -41,7 +45,6 @@ export class ShowReelComponent implements OnInit, OnDestroy {
         hasNext: page.end + 10 >= this.reels.length ? false : true,
       };
       this.isLoading = false;
-      console.log(this.reels);
     }, 1000);
   }
 
@@ -59,7 +62,6 @@ export class ShowReelComponent implements OnInit, OnDestroy {
             hasNext: this.reels.length < 10 ? false : true,
           };
           this.isLoading = false;
-          console.log(this.reels);
         }, 2000);
       }
     });
@@ -67,6 +69,7 @@ export class ShowReelComponent implements OnInit, OnDestroy {
   }
 
   public searchReels(search: string) {
-    console.log(search);
+    this.searchInput = search;
+    this.filteredReels = this.searchPipe.transform(this.reels, search);
   }
 }

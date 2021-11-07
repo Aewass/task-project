@@ -7,7 +7,7 @@ import { Reel } from '../../models/reel';
   styleUrls: ['./reel-card.component.scss'],
 })
 export class ReelCardComponent implements OnInit {
-  @Input() movie!: Reel;
+  @Input() reel!: Reel;
   constructor() {}
 
   ngOnInit(): void {}
