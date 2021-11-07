@@ -1,5 +1,8 @@
 .card {
   max-height: 50rem;
+  &--rated {
+    background-color: #63ff763d;
+  }
   &:hover {
     border-color: lightblue;
   }

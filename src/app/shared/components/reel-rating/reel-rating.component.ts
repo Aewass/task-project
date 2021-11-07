@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Reel } from '../../models/reel';
 
 @Component({
   selector: 'app-reel-rating',
@@ -6,11 +7,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./reel-rating.component.scss'],
 })
 export class ReelRatingComponent {
-  @Input() rating!: number;
-  @Input() readOnly: boolean = true;
-  @Output() ratingEmitter = new EventEmitter<number>();
+  @Input() rating = 0;
+  @Input() readOnly = true;
+  @Input() reel!: Reel;
+  @Input() displayUserRating = false;
 
   setRating(ev: number) {
-    this.rating = ev;
+    this.reel.userRating = ev;
   }
 }

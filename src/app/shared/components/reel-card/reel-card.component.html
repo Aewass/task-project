@@ -1,4 +1,4 @@
-<div class="card p-1 d-flex h-100">
+<div class="card p-1 d-flex h-100" [ngClass]="{'card--rated': reel.userRating > 0}">
   <div class="position-relative">
     <img [src]="reel.cover" class="card-img-top" alt="Missing Image">
     <div class="position-absolute top-0 mt-2" *ngIf="reel.genres">
@@ -7,7 +7,10 @@
       </span>
     </div>
     <div class="position-absolute bottom-0 w-100 d-block">
-      <app-reel-rating [rating]="reel.totalRating" [readOnly]="true"></app-reel-rating>
+      <app-reel-rating [rating]="reel.userRating" [reel]="reel" [readOnly]="true" [displayUserRating]="true"
+        *ngIf="reel.userRating > 0">
+      </app-reel-rating>
+      <app-reel-rating [rating]="reel.totalRating" [reel]="reel" [readOnly]="true"></app-reel-rating>
     </div>
   </div>
   <div class="card-body">
