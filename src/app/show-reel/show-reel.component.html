@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
       <app-reel-title [title]="(showMovies ? 'Movie' : 'Show') + ' reels'"></app-reel-title>
       <app-reel-search (searchEmitter)="searchReels($event)"></app-reel-search>
-      <app-reel-switch (reelSwitch)="fetchReels($event)"></app-reel-switch>
+      <app-reel-switch (reelSwitch)="fetchReels($event)" [showMovies]="showMovies"></app-reel-switch>
       <div class="col-10 col-md-8 col-lg-6 col-xl-4 text-center">
         <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#listModal">MY
           RATINGS</button>

@@ -13,10 +13,10 @@
       <app-reel-rating [rating]="reel.totalRating" [reel]="reel" [readOnly]="true"></app-reel-rating>
     </div>
   </div>
-  <div class="card-body">
-    <h4 class="card-title">{{reel.title}}</h4>
+  <div class="card-body position-relative">
+    <h5 class="card-title d-flex align-items-center">{{reel.title}} <span> ({{reel.release | date: 'YYYY'}})</span>
+    </h5>
     <div class="card__cast"><b>Starring:</b> {{reel.cast}}</div>
-    <div class="card__release mt-2"><b>Released:</b> {{reel.release | date: 'YYYY'}}</div>
   </div>
   <div class="card-footer">
     <p class="card-text" placement="top" [ngbTooltip]="reel.description">{{reel.description}}</p>

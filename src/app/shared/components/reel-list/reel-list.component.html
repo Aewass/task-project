@@ -1,6 +1,6 @@
 <div class="reel-list">
   <div class="row align-items-center mb-2" *ngFor="let reel of reels">
-    <div class="col-7" (click)="log(reel)">{{reel.title}}</div>
+    <div class="col-7">{{reel.title}}</div>
     <div class="col-5">
       <app-reel-rating [rating]="reel.userRating" [reel]="reel" [readOnly]="false"></app-reel-rating>
     </div>

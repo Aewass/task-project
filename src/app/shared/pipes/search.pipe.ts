@@ -28,7 +28,6 @@ export class SearchPipe implements PipeTransform {
     ) {
       return this.filterByRating(items, term, Range.EXACT);
     } else if (term.includes('at least') && term.includes('stars')) {
-      console.log('at least');
       return this.filterByRating(items, term, Range.AFTER);
     } else {
       return items.filter((item: any) =>

@@ -8,8 +8,4 @@ import { Reel } from '../../models/reel';
 })
 export class ReelListComponent {
   @Input() reels: Reel[] = [];
-
-  log(reel: any) {
-    console.log(reel);
-  }
 }

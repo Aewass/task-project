@@ -64,20 +64,25 @@ export class ShowReelComponent implements OnInit, OnDestroy {
     this.reset();
     this.initialLoad = true;
     this.isLoading = true;
-    this.reelsService.getReels(showMovies).subscribe((res) => {
-      if (res) {
-        this.timer = setTimeout(() => {
-          this.reels = res;
-          this.page = {
-            start: 0,
-            end: 10,
-            hasNext: this.reels.length < 10 ? false : true,
-          };
-          this.isLoading = false;
-        }, 2000);
+    this.reelsService.getReels(showMovies).subscribe(
+      (res) => {
+        if (res) {
+          this.timer = setTimeout(() => {
+            this.reels = res;
+            this.page = {
+              start: 0,
+              end: 10,
+              hasNext: this.reels.length < 10 ? false : true,
+            };
+            this.isLoading = false;
+            this.showMovies = showMovies;
+          }, 2000);
+        }
+      },
+      (error) => {
+        alert('Uh Oh, something happened!');
       }
-    });
-    this.showMovies = showMovies;
+    );
   }
 
   public searchReels(search: string) {

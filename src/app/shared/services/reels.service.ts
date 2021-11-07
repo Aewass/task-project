@@ -27,7 +27,6 @@ export class ReelsService {
     data.forEach((reel) => {
       reel.release = this.toDate(reel.release);
     });
-    console.log(data);
     return data;
   }
 
