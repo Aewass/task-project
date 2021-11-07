@@ -1,4 +1,11 @@
-ngb-rating {
-  color: #ffc107;
-  font-size: 20px;
+:host::ng-deep {
+  ngb-rating {
+    background-color: #7d7d7d96;
+    font-size: 25px;
+    width: 100%;
+    justify-content: center;
+    span {
+      color: yellow;
+    }
+  }
 }

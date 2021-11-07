@@ -4,7 +4,6 @@
       <app-reel-title [title]="(showMovies ? 'Movie' : 'Show') + ' reels'"></app-reel-title>
       <app-reel-search></app-reel-search>
       <app-reel-switch (reelSwitch)="fetchReels($event)"></app-reel-switch>
-
     </div>
     <div class="row justify-content-center" *ngIf="reels.length">
       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3"

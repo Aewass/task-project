@@ -11,7 +11,9 @@ export class ReelRatingComponent implements OnInit {
   @Output() ratingEmitter = new EventEmitter<number>();
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.rating);
+  }
 
   rate(rating: number) {
     this.ratingEmitter.emit(rating);

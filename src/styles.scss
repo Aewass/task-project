@@ -1,4 +1,3 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
 @font-face {
   font-family: "Open Sans", sans-serif;
   src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf");
@@ -24,4 +23,4 @@
 }
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";

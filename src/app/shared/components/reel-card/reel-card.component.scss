@@ -6,11 +6,22 @@
   &-text {
     color: var(--color-secondary);
     font-size: var(--font-small);
+    text-overflow: ellipsis;
+    overflow: auto;
+    height: 7rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    cursor: pointer;
   }
   &-img-top {
     height: 25rem;
   }
   &__cast {
     font-size: small;
+  }
+  &-footer {
+    max-height: 7rem;
   }
 }
