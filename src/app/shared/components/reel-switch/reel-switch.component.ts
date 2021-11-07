@@ -13,6 +13,7 @@ export class ReelSwitchComponent implements OnInit {
   ngOnInit(): void {}
 
   onSwitch(statement: boolean) {
+    // boolean that switches from movies to shows and vice versa
     this.showMovies = statement;
     this.reelSwitch.emit(this.showMovies);
   }

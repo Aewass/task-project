@@ -32,6 +32,7 @@ export class ShowReelComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    // clears mock timeouts (used to simulate request + display loader)
     clearTimeout(this.timer);
   }
 

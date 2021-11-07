@@ -9,9 +9,10 @@ import { Reel } from '../../models/reel';
 export class ReelRatingComponent {
   @Input() rating = 0;
   @Input() readOnly = true;
+  // readOnly === true for totalRatings
   @Input() reel!: Reel;
   @Input() displayUserRating = false;
-
+  // display userRating on homepage
   setRating(ev: number) {
     this.reel.userRating = ev;
   }

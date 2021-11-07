@@ -13,10 +13,12 @@ export class ReelsService {
   constructor(private httpClient: HttpClient) {}
 
   public getReels(getMovies: boolean): Observable<Reel[]> {
+    // mock http gets movies/shows based on getMovies boolean
     return this.httpClient
       .get<Reel[]>(getMovies ? this.movies : this.shows)
       .pipe(
         map((result) => {
+          // sort by rating && convert release to date
           return this.normalize(result);
         })
       );

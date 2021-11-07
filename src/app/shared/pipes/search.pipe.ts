@@ -13,6 +13,9 @@ export enum Range {
 @Injectable()
 export class SearchPipe implements PipeTransform {
   transform(items: Reel[], term: string): any {
+    // checks for certain phrases
+    // filter with appropriate function
+    // if no phrase it uses default filtering by other object properties
     if (term.includes('before') && term.length > 7) {
       return this.filterByYear(items, term, Range.BEFORE);
     } else if (term.includes('after') && term.length > 7) {
@@ -41,9 +44,11 @@ export class SearchPipe implements PipeTransform {
   }
 
   filterByYear(data: Reel[], term: string, range: Range) {
+    // regex to extract year string from search term
     let argument = term.match(/\d{4}/);
     let date = new Date();
     argument ? (date = new Date(argument[0])) : null;
+    // pass enum value to decide on range direction
     if (range === Range.BEFORE) {
       return data.filter((item) => isBefore(item.release, date));
     } else {
@@ -52,9 +57,11 @@ export class SearchPipe implements PipeTransform {
   }
 
   filterByRating(data: Reel[], term: string, range: Range) {
+    // regex to extract number from search term
     let argument = term.match(/\d{1}/);
     let rating: number;
     argument ? (rating = Number(argument[0])) : null;
+    // pass enum value to decide on range direction
     if (range === Range.EXACT) {
       return data.filter((item) => item.totalRating === rating);
     } else {

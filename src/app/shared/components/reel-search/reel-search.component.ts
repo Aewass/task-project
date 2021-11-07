@@ -17,6 +17,7 @@ export class ReelSearchComponent implements OnInit {
     this.subscription = this.search.valueChanges
       .pipe(debounceTime(1000))
       .subscribe((input: string) => this.searchEmitter.emit(input));
+    // emits value with debounce time
   }
 
   ngOnDestroy(): void {

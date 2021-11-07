@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ReelLoaderComponent implements OnInit {
   @Input() initialLoad = false;
+  // different loaders for initial and load more reels
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,11 +1,13 @@
+@import "~bootstrap/scss/bootstrap";
+
 @font-face {
   font-family: "Open Sans", sans-serif;
   src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("./assets/fonts/MontSerrat/Montserrat-Medium.ttf");
+  font-family: "Domine", serif;
+  src: url("./assets/fonts/Domine/Domine.ttf");
 }
 
 * {
@@ -15,12 +17,9 @@
 
 :root {
   --font-primary: "Open Sans", sans-serif;
-  --font-secondary: "Montserrat", sans-serif;
+  --font-secondary: "Domine", serif;
   --color-primary: #333;
   --color-secondary: darkgray;
   --font-large: 18px;
   --font-small: 14px;
 }
-
-/* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
