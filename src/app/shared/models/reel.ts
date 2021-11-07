@@ -1,4 +1,11 @@
-export interface IReel {
+import { Pagination } from './pagination';
+
+export interface ReelsOutput {
+  reels: Reel[];
+  pagination: Pagination;
+}
+
+export interface Reel extends Pagination {
   title: string;
   released: Date;
   cast: string[];

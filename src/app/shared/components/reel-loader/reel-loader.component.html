@@ -1,0 +1,11 @@
+<div class="lds-hourglass" *ngIf="initialLoad"></div>
+
+
+<ng-container *ngIf="!initialLoad">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</ng-container>

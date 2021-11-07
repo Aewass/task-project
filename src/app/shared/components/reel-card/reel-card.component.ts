@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IReel } from '../../models/reel';
+import { Reel } from '../../models/reel';
 
 @Component({
   selector: 'app-reel-card',
@@ -7,7 +7,7 @@ import { IReel } from '../../models/reel';
   styleUrls: ['./reel-card.component.scss'],
 })
 export class ReelCardComponent implements OnInit {
-  @Input() movie!: IReel;
+  @Input() movie!: Reel;
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,4 +1,4 @@
-import { IReel } from './../models/reel';
+import { ReelsOutput, Reel } from './../models/reel';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -12,23 +12,18 @@ export class ReelsService {
   shows = 'assets/shows.json';
   constructor(private httpClient: HttpClient) {}
 
-  public getMovies(): Observable<IReel[]> {
-    return this.httpClient.get<IReel[]>(this.movies).pipe(
-      map((result) => {
-        return this.normalize(result);
-      })
-    );
+  public getReels(getMovies: boolean): Observable<Reel[]> {
+    return this.httpClient
+      .get<Reel[]>(getMovies ? this.movies : this.shows)
+      .pipe(
+        map((result) => {
+          return this.normalize(result);
+        })
+      );
   }
 
-  public getShows(): Observable<IReel[]> {
-    return this.httpClient.get<IReel[]>(this.shows).pipe(
-      map((result) => {
-        return this.normalize(result);
-      })
-    );
-  }
-
-  public normalize(data: IReel[]) {
-    return data.sort((a, b) => b.totalRating - a.totalRating);
+  public normalize(data: Reel[]) {
+    data.sort((a, b) => b.totalRating - a.totalRating);
+    return data;
   }
 }

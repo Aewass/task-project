@@ -1,13 +1,23 @@
-<div class="container-fluid">
-  <div class="row">
-    <app-reel-title [title]="(showMovies ? 'Movie' : 'Show') + ' reels'"></app-reel-title>
-    <app-reel-search></app-reel-search>
-    <app-reel-switch></app-reel-switch>
+<div class="container-fluid reels">
+  <ng-container *ngIf="reels.length">
+    <div class="row">
+      <app-reel-title [title]="(showMovies ? 'Movie' : 'Show') + ' reels'"></app-reel-title>
+      <app-reel-search></app-reel-search>
+      <app-reel-switch (reelSwitch)="fetchReels($event)"></app-reel-switch>
 
-  </div>
-  <div class="row" *ngIf="movies.length">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3" *ngFor="let movie of movies;">
-      <app-reel-card [movie]="movie"></app-reel-card>
     </div>
-  </div>
+    <div class="row justify-content-center" *ngIf="reels.length">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3"
+        *ngFor="let reel of reels | slice:page.start: page.end;">
+        <app-reel-card [movie]="reel"></app-reel-card>
+      </div>
+      <div class="col-12 text-center" *ngIf="page.hasNext">
+        <button class="reel__more btn btn-dark my-5" (click)="fetchMoreReels(page)" *ngIf="!isLoading">
+          LOAD MORE REELS
+        </button>
+        <app-reel-loader *ngIf="isLoading && !initialLoad" [initialLoad]="false"></app-reel-loader>
+      </div>
+    </div>
+  </ng-container>
+  <app-reel-loader *ngIf="isLoading && initialLoad" [initialLoad]="true"></app-reel-loader>
 </div>

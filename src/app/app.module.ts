@@ -12,6 +12,8 @@ import { ReelCardComponent } from './shared/components/reel-card/reel-card.compo
 import { ReelRatingComponent } from './shared/components/reel-rating/reel-rating.component';
 import { ReelTitleComponent } from './shared/components/reel-title/reel-title.component';
 import { ReelSearchComponent } from './shared/components/reel-search/reel-search.component';
+import { ReelLoaderComponent } from './shared/components/reel-loader/reel-loader.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { ReelSearchComponent } from './shared/components/reel-search/reel-search
     ReelTitleComponent,
     ReelSearchComponent,
     ReelSwitchComponent,
+    ReelLoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { ReelSearchComponent } from './shared/components/reel-search/reel-search
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
