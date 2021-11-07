@@ -1,9 +1,13 @@
 <div class="container-fluid reels">
   <ng-container *ngIf="reels.length">
-    <div class="row">
+    <div class="row justify-content-center">
       <app-reel-title [title]="(showMovies ? 'Movie' : 'Show') + ' reels'"></app-reel-title>
-      <app-reel-search></app-reel-search>
+      <app-reel-search (searchEmitter)="searchReels($event)"></app-reel-search>
       <app-reel-switch (reelSwitch)="fetchReels($event)"></app-reel-switch>
+      <div class="col-10 col-md-8 col-lg-6 col-xl-4 text-center">
+        <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#listModal">MY
+          RATINGS</button>
+      </div>
     </div>
     <div class="row justify-content-center" *ngIf="reels.length">
       <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3"
@@ -19,4 +23,22 @@
     </div>
   </ng-container>
   <app-reel-loader *ngIf="isLoading && initialLoad" [initialLoad]="true"></app-reel-loader>
+</div>
+
+
+<div class="modal fade" id="listModal" tabindex="-1" aria-labelledby="listModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="listModalLabel">MY REELS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-reel-list [reels]="reels"></app-reel-list>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">CLOSE MY REELS</button>
+      </div>
+    </div>
+  </div>
 </div>

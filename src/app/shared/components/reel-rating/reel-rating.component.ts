@@ -15,7 +15,9 @@ export class ReelRatingComponent implements OnInit {
     console.log(this.rating);
   }
 
-  rate(rating: number) {
-    this.ratingEmitter.emit(rating);
+  setRating(ev: number) {
+    console.log(ev);
+    this.rating = ev;
+    console.log(this.rating);
   }
 }

@@ -1,0 +1,9 @@
+.reel-list {
+  .row {
+    border-bottom: 2px solid #f5f3f3;
+    padding: 0.5rem 0;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

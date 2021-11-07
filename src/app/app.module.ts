@@ -2,7 +2,7 @@ import { ReelSwitchComponent } from './shared/components/reel-switch/reel-switch
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,7 @@ import { ReelTitleComponent } from './shared/components/reel-title/reel-title.co
 import { ReelSearchComponent } from './shared/components/reel-search/reel-search.component';
 import { ReelLoaderComponent } from './shared/components/reel-loader/reel-loader.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReelListComponent } from './shared/components/reel-list/reel-list.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReelSearchComponent,
     ReelSwitchComponent,
     ReelLoaderComponent,
+    ReelListComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     AppRoutingModule,
     NgbModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

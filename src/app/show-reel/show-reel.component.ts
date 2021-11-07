@@ -21,10 +21,7 @@ export class ShowReelComponent implements OnInit, OnDestroy {
   public reels: Reel[] = [];
   page!: Page;
   timer: any;
-  constructor(
-    private reelsService: ReelsService,
-    private functionService: FunctionService
-  ) {}
+  constructor(private reelsService: ReelsService) {}
 
   ngOnInit(): void {
     this.fetchReels(true);
@@ -34,7 +31,7 @@ export class ShowReelComponent implements OnInit, OnDestroy {
     clearTimeout(this.timer);
   }
 
-  fetchMoreReels(page: Page) {
+  public fetchMoreReels(page: Page) {
     this.initialLoad = false;
     this.isLoading = true;
     this.timer = setTimeout(() => {
@@ -44,10 +41,11 @@ export class ShowReelComponent implements OnInit, OnDestroy {
         hasNext: page.end + 10 >= this.reels.length ? false : true,
       };
       this.isLoading = false;
+      console.log(this.reels);
     }, 1000);
   }
 
-  fetchReels(showMovies: boolean) {
+  public fetchReels(showMovies: boolean) {
     this.reels = [];
     this.initialLoad = true;
     this.isLoading = true;
@@ -61,9 +59,14 @@ export class ShowReelComponent implements OnInit, OnDestroy {
             hasNext: this.reels.length < 10 ? false : true,
           };
           this.isLoading = false;
+          console.log(this.reels);
         }, 2000);
       }
     });
     this.showMovies = showMovies;
+  }
+
+  public searchReels(search: string) {
+    console.log(search);
   }
 }

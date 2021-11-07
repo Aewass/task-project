@@ -1,4 +1,4 @@
-import { ReelsOutput, Reel } from './../models/reel';
+import { Reel } from './../models/reel';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';

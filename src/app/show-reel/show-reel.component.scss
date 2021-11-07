@@ -3,3 +3,8 @@
     width: min(100%, 25rem);
   }
 }
+
+.modal-body {
+  height: 70vh;
+  overflow-y: auto;
+}
